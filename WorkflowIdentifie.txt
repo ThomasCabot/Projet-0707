@@ -1,0 +1,12 @@
+mesurer le flux entrant et sortant d'un parking et la restitution se fera soit par le web soit par une tablette. on doit déterminer quel workflow (github) mettre en place et justifier pourquoi.
+
+Workflow choisis : Gitflow
+Une branche Main qui contient une version stable du projet. Aucun merge sur cette branche, seulement des merges
+Branche develop qui contient le code du développement le plus récent, c’est la branche par défaut pour le développement de nouvelle fonctions
+Branche features (temporaires) pour développer de nouvelle feature, ces branches sont temporaires et ne sont présentes que le temps du développement de la feature. Elles sont créées à partir de la branche develop
+Branche Release permettant de préparer une nouvelle version de production.
+
+
+Pourquoi ce choix ? : 
+Selon nous c’est le meilleur choix, car il permet une séparation claire des environnements en s’assurant que la branche main ne contient que le code validé pour la production. une gestion des mise a jours en formalisant l’approche avec la branche release (historique de version facile à suivre).
+Ce choix permet aussi un travail en équipe plus facile avec la création de branche features pour chaque feature, chacun travail sans perturbé la branche principale de développement (develop)

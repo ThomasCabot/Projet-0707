@@ -1,0 +1,14 @@
+Identifier les hooks à utiliser et pourquoi ?
+
+Pre-commit : Permet d'identifier les problèmes simples avant l'envoi de code dans la serveur. 
+-> Il garantit une qualité minimale avant d’ajouter du code au dépôt.
+
+Commit-msg : Mettre un format précis de message pour les commit
+→ Cela rend l’historique Git plus lisible et facilite le suivi des fonctionnalités et corrections.
+
+Pre-push : Permet de s’assurer que les tests passent avant de push
+→ Il empêche de push du code qui casse le projet et protège les branches partagées (developp et main).
+
+
+AfterUpdate : Après chaque mise à jour du nombre de véhicules présents 
+→ Il peut être utilisé pour déclencher automatiquement une action, par exemple actualiser la donnée de comptage des véhicules après une mise à jour du code ou déployer une nouvelle version.
